@@ -1,0 +1,8 @@
+{
+  "name": "bower-configuration",
+  "version": "0.0.1",
+  "dependencies": {
+    "ember": "*",
+    "jquery-mockjax": "*"
+  }
+}
