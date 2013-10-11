@@ -1,14 +1,22 @@
 {
+  "name": "iccfall2013",
+  "version": "1.0.0",
   "dependencies": {
-    "grunt-karma": "*",
+    "bower": "*",
+    "coffee-script": "*",
     "grunt-cli": "*",
     "grunt-contrib-concat": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-hashres": "*",
-    "grunt-ember-template-compiler": "1.0.6",
-    "karma-qunit": "*",
+    "grunt-ember-template-compiler": "1.0.6"
+  },
+  "devDependencies": {
+    "grunt-coffeelint": "*",
+    "grunt-karma": "*",
     "karma": "0.10.0",
-    "bower": "*"
+    "karma-qunit": "*"
   },
   "scripts": {
     "postinstall": "bower install"

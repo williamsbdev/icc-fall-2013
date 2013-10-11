@@ -1,17 +1,21 @@
 module.exports = function(karma) {
     karma.set({
-        basePath: 'js',
-
+        basePath: '.',
+        frameworks: ["qunit"],
         files: [
-          "lib/deps.min.js",
+          // "lib/deps.min.js",
           "tests/*.js"
         ],
-
+        port: 9876,
+        colors: true,
         logLevel: karma.LOG_ERROR,
         browsers: ['PhantomJS'],
         singleRun: true,
         autoWatch: false,
 
-        frameworks: ["qunit"]
+        plugins: [
+            'karma-qunit',
+            'karma-phantomjs-launcher'
+        ]
     });
 };
